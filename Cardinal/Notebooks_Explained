@@ -1,0 +1,147 @@
+Cardinal-1.ipynb File (INCLUDE)
+- Load halos (648,278) which is a result of matching the DS and Sigma file computed by Chunhao with the gold catalog because the   ra and dec in the corrected file is not well understood. Not sure how he computed the ra and dec in the corrected file.
+- Compute the angular and co-moving distance then save the file.
+- Load the gold catalog including the redshift catalog
+- Load the redmapper catalog
+- Matching halos with the redmapper clusters:
+  * Method 1 - using the ra and dec then using a projected distance (radius)
+  * Method 2 - using the first id_cent(cluster) and coadd_object_id(halos) quantities respectively
+  * Method 3 - Shulei - matching redmapper clusters with the most massive halo
+- We bin the (648,278) halos by redshift and richness then quantify the selection bias using the the resulting file of matching halos to clusters using method 2. 
+- Plot the deltasigma(DS) and sigma(S) profiles of each bin including the errorbars(std)
+- Plot the selection bias of the DS and S profiles for each bin.
+- Plot the selection bias comparison of Buzzard with Cardinal
+  
+  
+Cardinal-2.ipynb File (INCLUDE)
+- Load the deltasigma and sigma profiles computed by ChunHao (correctfilev2.npy) - corrected file
+- Load the gold catalog including the redshift catalog
+- Ploting the area of the sky of the Clusters in 100 Patches (Aitoff Projection)
+- Plotting Fig.1 of the paper, which was later done in NERSC due to package conflicts.
+- Check halos than ChunHao did not compute their DS and S
+
+
+
+cardinal_MRR.ipynb File (INCLUDE)
+- Load halos (648,278) with Sigma and DS profile that have a match in Gold catalog
+- Load the corrected file
+- Load the HaloRun catalog(20110), which has been filetered with lambda greater than 20
+- Do richness--mass relation using the maximumlikelihood and plot the relation of the 3 redshift bins
+- Compared the HaloRun to Shulei's method of matching the halos to the clusters (using a plot)
+- Plot of halomass function for narrow redshift bins
+
+
+DeltaZDistribution.ipynb File (INCLUDE)
+- Load the redmapper clusters and the members
+- Plot properties of the redmepper members and fit using double gaussian.
+- Plot the sigma_proj and f_proj
+
+
+
+HaloRun-Halo_Cluster_MatchCardinal-1.ipynb File (INCLUDE)
+- Load halos (648,278) which is a result of matching the DS and Sigma file computed by Chunhao with the gold catalog because the   ra and dec in the corrected file is not well understood. Not sure how he computed the ra and dec in the corrected file.
+- Compute the angular and co-moving distance then save the file.
+- Load the gold catalog including the redshift catalog
+- Load the redmapper catalog
+- Matching halos with the redmapper clusters:
+  * Method 1 - using the ra and dec then using a projected distance (radius)
+  * Method 2 - using the first id_cent(cluster) and coadd_object_id(halos) quantities respectively
+  * Method 3 - Shulei - matching redmapper clusters with the most massive halo
+- We bin the (648,278) halos by redshift and richness then quantify the selection bias using the the resulting file of matching halos to clusters using method 2. 
+- Plot the deltasigma(DS) and sigma(S) profiles of each bin including the errorbars(std)
+- Plot the selection bias of the DS and S profiles for each bin.
+- Plot the selection bias comparison of Buzzard with Cardinal
+  
+  
+Cardinal-2.ipynb File (INCLUDE)
+- Load the deltasigma and sigma profiles computed by ChunHao (correctfilev2.npy) - corrected file
+- Load the gold catalog including the redshift catalog
+- Ploting the area of the sky of the Clusters in 100 Patches (Aitoff Projection)
+- Plotting Fig.1 of the paper, which was later done in NERSC due to package conflicts.
+- Check halos than ChunHao did not compute their DS and S
+
+
+
+
+cardinal_MRR.ipynb File (INCLUDE)
+- Load halos (648,278) with Sigma and DS profile that have a match in Gold catalog
+- Load the corrected file
+- Load the HaloRun catalog(20110), which has been filetered with lambda greater than 20
+- Do richness--mass relation using the maximumlikelihood and plot the relation of the 3 redshift bins
+- Compared the HaloRun to Shulei's method of matching the halos to the clusters (using a plot)
+- Plot of halomass function for narrow redshift bins
+
+
+DeltaZDistribution.ipynb File (INCLUDE)
+- Load the redmapper clusters and the members
+- Plot properties of the redmepper members and fit using double gaussian.
+- Plot the sigma_proj and f_proj
+
+
+
+HaloRun-Halo_Cluster_Match.ipynb File (INCLUDE)
+- Load the halorun clusters and members
+     * Save halos with Lambda greater than 20 (20110)
+     * Save halos with lambda greater than 0 (1081991)
+- Computing the DS and S error by diving the sky into patches
+- Plot sigma profile for eacg bin with the computed errors
+
+
+redSequence-cardinal-2.ipynb File (INCLUDE)
+- Generate the color templates to be used in the cylinder approach
+- Plot the redsequence including the errors
+- Investigating the magnitude cut and color cut
+
+
+Selection-Bias.ipynb (INCLUDE)
+- Load the corrected, halorun and error data
+- Plot the selection bias (including the errors) for the redshift and richness bins
+
+
+WL-Comparison-Depth-02-035.ipynb WL-Comparison-Depth-035-05.ipynb WL-Comparison-Depth-05-065.ipynb Files (INCLUDE)  --- WL_Orig
+- Load the cylinder richness data of the different depths (30,60,90,120)
+- Load the HaloRun and the corrected file
+- Merge halos with cylinder clusters (DepthMapper)
+- Plot the comparison of selection bias between the redmapper to the different cylinder depths
+
+
+
+WL-Comparison-Depth-035-05-CC.ipynb (INCLUDE)
+- Similar to the WL_Orig file but we fix the redshift bin and depth to 60, then vary the color_cut (9,20,50,100,500)
+
+
+
+
+ File.ipynb (INCLUDE)
+- Load the halorun clusters and members
+     * Save halos with Lambda greater than 20 (20110)
+     * Save halos with lambda greater than 0 (1081991)
+- Computing the DS and S error by diving the sky into patches
+- Plot sigma profile for eacg bin with the computed errors
+
+
+
+redSequence-cardinal-2.ipynb File (INCLUDE)
+- Generate the color templates to be used in the cylinder approach
+- Plot the redsequence including the errors
+- Investigating the magnitude cut and color cut
+
+
+
+Selection-Bias.ipynb (INCLUDE)
+- Load the corrected, halorun and error data
+- Plot the selection bias (including the errors) for the redshift and richness bins
+
+
+
+WL-Comparison-Depth-02-035.ipynb WL-Comparison-Depth-035-05.ipynb WL-Comparison-Depth-05-065.ipynb Files (INCLUDE)  --- WL_Orig
+- Load the cylinder richness data of the different depths (30,60,90,120)
+- Load the HaloRun and the corrected file
+- Merge halos with cylinder clusters (DepthMapper)
+- Plot the comparison of selection bias between the redmapper to the different cylinder depths
+
+
+
+WL-Comparison-Depth-035-05-CC.ipynb (INCLUDE)
+- Similar to the WL_Orig file but we fix the redshift bin and depth to 60, then vary the color_cut (9,20,50,100,500)
+
